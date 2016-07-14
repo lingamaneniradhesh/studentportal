@@ -14,8 +14,8 @@ import com.radhesh.studentportal.model.Student;
 
 import junit.framework.TestCase;
 
-public class StudentDaoImplTest extends EntityDaoImplTest {
-
+public abstract class StudentDaoImplTest extends EntityDaoImplTest {
+/*
 	@Autowired
 	StudentDAO studentDAO;
 
@@ -25,7 +25,7 @@ public class StudentDaoImplTest extends EntityDaoImplTest {
 		return dataSet;
 	}
 
-	/*
+	
 	 * In case you need multiple datasets (mapping different tables) and you do
 	 * prefer to keep them in separate XML's
 	 * 
@@ -37,7 +37,7 @@ public class StudentDaoImplTest extends EntityDaoImplTest {
 	 * "Benefits.xml")), new
 	 * FlatXmlDataSet(this.getClass().getClassLoader().getResourceAsStream(
 	 * "Departements.xml")) }; return new CompositeDataSet(datasets); }
-	 */
+	 
 
 	@Test
 	public void findById() {
@@ -94,5 +94,5 @@ public class StudentDaoImplTest extends EntityDaoImplTest {
 		student.setDateOfJoining(new LocalDate());
 		return student;
 	}
-
+*/
 }
