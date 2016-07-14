@@ -1,0 +1,106 @@
+@CHARSET "UTF-8";
+
+nav {
+	background-color: #349cc1;
+	border: 1px solid #349cc1;
+	color: rgba(255, 255, 255, 0.98);
+	display: block;
+	margin: 0;
+	overflow: hidden;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li {
+	margin: 0;
+	display: inline-block;
+	list-style-type: none;
+	transition: all 0.2s;
+}
+
+nav>ul>li>a {
+	color: rgba(255, 255, 255, 0.98);
+	display: block;
+	line-height: 2em;
+	padding: 0.5em 2em;
+	text-decoration: none;
+}
+
+nav li>ul {
+	display: none;
+	margin-top: 1px;
+	background-color: #349cc1;
+}
+
+nav li>ul li {
+	display: block;
+}
+
+nav  li>ul li a {
+	color: rgba(255, 255, 255, 0.98);
+	display: block;
+	line-height: 2em;
+	padding: 0.5em 2em;
+	text-decoration: none;
+}
+
+nav li:hover {
+	background-color: #666;
+	z-index: 1000;
+}
+
+nav li:hover>ul {
+	position: absolute;
+	display: block;
+	z-index: 1000;
+}
+
+nav li>ul>li ul {
+	display: none;
+	background-color: #349cc1;
+}
+
+nav li>ul>li:hover>ul {
+	position: absolute;
+	display: block;
+	margin-left: 100%;
+	margin-top: -3em;
+	z-index: 1000;
+}
+
+nav ul>li.sub {
+	background: url(../images/arrow-down.png) right center no-repeat;
+}
+
+nav ul>li.sub:hover {
+	background-color: #666;
+}
+
+nav ul>li.sub li.sub {
+	background: url(../images/arrow-right.png) right center no-repeat;
+}
+
+nav ul>li.sub li.sub:hover {
+	background-color: #666;
+}
+
+footer {
+	background-color: #0B0B3B;
+	color: rgba(255, 255, 255, 0.98);
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+	marging-top: auto;
+}
+
+.error {
+	color: #ff0000;
+}
+
+.success {
+	color: #00ff00;
+}
